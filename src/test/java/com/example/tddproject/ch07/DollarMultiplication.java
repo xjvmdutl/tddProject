@@ -1,0 +1,16 @@
+package com.example.tddproject.ch07;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.example.tddproject.ch06.Dollar;
+import org.junit.jupiter.api.Test;
+
+class DollarMultiplication {
+  @Test
+  public void testMultiplication(){
+    Dollar five = new Dollar(5);
+    assertEquals(new Dollar(10), five.times(2));
+    assertEquals(new Dollar(15), five.times(3));
+  }
+
+}
