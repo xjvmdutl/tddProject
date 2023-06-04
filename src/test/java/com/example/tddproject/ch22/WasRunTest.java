@@ -1,7 +1,7 @@
 package com.example.tddproject.ch22;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.springframework.test.util.AssertionErrors.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -53,6 +53,4 @@ public class WasRunTest {
     suite.run(result);
     assertThat("2 run, 1 failed").isEqualTo(result.summary());
   }
-
-
 }
