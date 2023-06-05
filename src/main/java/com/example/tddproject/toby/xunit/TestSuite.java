@@ -9,7 +9,7 @@ public class TestSuite implements Test {
 
   //List<WasRun> tests = new ArrayList<>();
   //List<TestCase> tests = new ArrayList<>();
-  List<Test> tests = new ArrayList<>(); //compose 패턴을 이용해 TestSuite 타입이나, TestCase 타입 모두 test 타입으로 취급한다.
+  List<Test> tests = new ArrayList<>(); //Composite 패턴을 이용해 TestSuite 타입이나, TestCase 타입 모두 test 타입으로 취급한다.
 
   public TestSuite(Class<? extends TestCase> testClass) {
     /*

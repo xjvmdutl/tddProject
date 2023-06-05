@@ -29,7 +29,7 @@ public class XUnitTest {
     suite.run(result);
     System.out.println(result.getSummary());
 
-    //Compose 패턴을 적용
+    //Composite 패턴을 적용
     TestSuite suite2 = new TestSuite();
     suite2.add(new TestCaseTest("testTemplateMethod"));
     suite2.add(suite);
